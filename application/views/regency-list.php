@@ -65,6 +65,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<?php $this->load->view('parts/edit-regency-modal'); ?>
 
-	<script type="text/javascript" src="<?php echo base_url();?>public/assets/javascripts/regency.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>public/assets/javascripts/base.js"></script>
 </body>
 </html>
