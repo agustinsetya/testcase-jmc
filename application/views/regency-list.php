@@ -24,6 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<u><h2>Regency List</h2></u>
 			</div>
 
+			<a href="<?= base_url();?>Province" class="btn btn-success" >Province Data</a><br><br>
+
 			<?php $this->load->view('parts/regency-filter'); ?>
 
 			<div class="table-responsive">
