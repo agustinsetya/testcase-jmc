@@ -23,6 +23,13 @@ class ProvinceModel extends CI_Model {
         return (array) ($data ?? []);
 	}
 
+	public function addProvinceData($data)
+    {
+        return $this->db
+			->insert('mt_province', $data)
+		;
+    }
+	
 	public function updateProvinceData($data)
     {
         return $this->db
