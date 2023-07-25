@@ -24,7 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<u><h2>Province List</h2></u>
 			</div>
 
-			<a href="<?= base_url();?>Regency/getAllRegency" class="btn btn-success" >Regency Data</a><br><br>
+			<a href="<?= base_url();?>Regency/getAllRegency" class="btn btn-success" >Regency Data</a>
+			<a class="btn btn-warning btn-add-province" data-toggle="modal" data-target="#modal_add_province">Add Province</a><br><br>
 
 			<div class="table-responsive">
 				<table class="table province_list" border="1">
@@ -57,7 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</section>
 
-	<?php $this->load->view('parts/edit-province-modal'); ?>
+	<?php $this->load->view('parts/province-modal'); ?>
 
 </body>
 </html>
