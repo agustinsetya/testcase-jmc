@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<u><h2>Province List</h2></u>
 			</div>
 
-			<button class="btn btn-primary">Regency Data</button><br><br>
+			<a href="<?= base_url();?>Regency/getAllRegency" class="btn btn-success" >Regency Data</a><br><br>
 
 			<div class="table-responsive">
 				<table class="table province_list" border="1">
