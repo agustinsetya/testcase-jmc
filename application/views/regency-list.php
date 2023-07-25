@@ -24,7 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<u><h2>Regency List</h2></u>
 			</div>
 
-			<a href="<?= base_url();?>Province" class="btn btn-success" >Province Data</a><br><br>
+			<a href="<?= base_url();?>Province" class="btn btn-success" >Province Data</a>
+			<a class="btn btn-warning btn-add-regency" data-toggle="modal" data-target="#modal_add_regency">Add Regency</a><br><br>
 
 			<?php $this->load->view('parts/regency-filter'); ?>
 
@@ -63,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</section>
 
-	<?php $this->load->view('parts/edit-regency-modal'); ?>
+	<?php $this->load->view('parts/regency-modal'); ?>
 
 	<script type="text/javascript" src="<?php echo base_url();?>public/assets/javascripts/base.js"></script>
 </body>
