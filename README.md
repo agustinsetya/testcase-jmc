@@ -11,3 +11,4 @@
 - pada halaman tersebut dapat dilakukan edit dan delete data provinsi
 - pada halaman tersebut juga terdapat button "Regency Data" yang akan mengarahkan ke halaman list kota/kabupaten
 - pada halaman kota/kabupaten juga dapat dilakukan edit dan delete, serta search data berdasarkan keyword ataupun provinsi
+- pada halaman kota/kabupaten juga terdapat button "Province Data" yang akan mengarahkan kembali halaman list province
