@@ -51,6 +51,13 @@ class RegencyModel extends CI_Model {
         return (array) ($data ?? []);
 	}
 
+    public function addRegencyData($data)
+    {
+        return $this->db
+			->insert('mt_regency', $data)
+		;
+    }
+
 	public function updateRegencyData($data)
     {
         return $this->db
