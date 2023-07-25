@@ -15,6 +15,16 @@ class Province extends CI_Controller {
 		$this->load->view('province-list', $data);
 	}
 
+	function addProvince()
+	{
+		$data = array(
+			'mt_province_name' => $this->input->post('province_name')
+		);
+
+		$this->ProvinceModel->addProvinceData($data);
+		redirect('Province');
+	}
+
 	function updateProvince()
 	{
 		$data = array(
