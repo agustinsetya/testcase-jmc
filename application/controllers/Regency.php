@@ -27,6 +27,18 @@ class Regency extends CI_Controller {
 		$this->getAllRegency($payload);
 	}
 
+	function addRegency()
+	{
+		$data = array(
+			'mt_regency_name' => $this->input->post('regency_name'),
+			'total_population' => $this->input->post('total_population'),
+			'mt_province_id' => $this->input->post('province_id')
+		);
+
+		$this->RegencyModel->addRegencyData($data);
+		redirect('Regency/getAllRegency');
+	}
+
 	function updateRegency()
 	{
 		$data = array(
@@ -37,12 +49,12 @@ class Regency extends CI_Controller {
 		);
 
 		$this->RegencyModel->updateRegencyData($data);
-		redirect('Regency');
+		redirect('Regency/getAllRegency');
 	}
 
 	function deleteRegency($id)
 	{
 		$this->RegencyModel->deleteData($id);
-		redirect('Regency');
+		redirect('Regency/getAllRegency');
 	}
 }
