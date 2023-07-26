@@ -1,5 +1,5 @@
 # TestCaseJMC
- Membuat web untuk menampilkan data provinsi dan kota/kabupaten
+ Membuat web untuk menampilkan data provinsi dan kota/kabupaten menggunakan PHP dan Framework CodeIgniter
 
 # Cara run website
 - clone repository
